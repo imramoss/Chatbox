@@ -1,0 +1,91 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container do chat */
+.chat-container {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Caixa de mensagens */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Caixa de entrada */
+.input-box {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagens do usuário e do bot */
+.user-msg, .bot-msg {
+    margin: 10px 0;
+}
+
+.user-msg {
+    text-align: right;
+}
+
+.bot-msg {
+    text-align: left;
+    color: #555;
+}
+
+/* Estilo de balões de mensagens */
+.user-msg span, .bot-msg span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.user-msg span {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.bot-msg span {
+    background-color: #f1f1f1;
+    color: #333;
+}
